@@ -50,8 +50,8 @@
     <div class="section-1" style="background: url(images/section-1-bg.png) fixed center / cover no-repeat; color: #fff;">
       <div class="container">
         <!-- Section container 1 -->
-        <div style="display: flex;">
-          <div style="padding: 4em 1em;">
+        <div class="flex-wrap flex-md-nowrap" style="display: flex;">
+          <div class="p-1 py-md-5">
             <div style="font-size: 5em;">
               <span style="font-weight: 700;">AX</span>
               <span style="color: #ff8b38; margin-left: -0.3em;">IT</span>
@@ -85,8 +85,8 @@
           </div>
 
           <!-- Registration form -->
-          <div style="width: 50em; display: flex;">
-            <form style=" width: 18em; margin: auto; overflow: hidden; border-radius: 0.5em;">
+          <div class="registration-form">
+            <form>
               <div style="
                 padding: 0.8em; 
                 background: #f5f5f5; 
@@ -141,38 +141,38 @@
       position: relative;">
       <div class="container">
         <!-- Social container -->
-        <div style="
+        <div class="flex-column flex-md-row" style="
           display: flex; 
           padding: 1em 1em; 
           align-items: center; 
           background: #fff;">
-          <div style="margin-right: 2em;">
+          <div>
             <h2>Social media</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               Aenean euismod bibendum laoreet.
             </p>
           </div>
-          <div style="padding-left: 2em;">
-            <a href><i class="fab fa-facebook-f" style="font-size: 1.9em; margin-right: 1em;"></i></a>
-					  <a href><i class="fab fa-twitter" style="font-size: 1.9em; margin-right: 1em;"></i></a>
-					  <a href><i class="fab fa-google-plus-g" style="font-size: 1.9em; margin-right: 1em;"></i></a>
-            <a href><i class="fab fa-pinterest" style="font-size: 1.9em; margin-right: 1em;"></i></a>
-  					<a href><i class="fab fa-instagram" style="font-size: 1.9em; margin-right: 1em;"></i></a>
-  					<a href><i class="fab fa-stumbleupon" style="font-size: 1.9em; margin-right: 1em;"></i></a>
-  					<a href><i class="fa fa-wifi" style="font-size: 1.9em; margin-right: 1em;"></i></a>
+          <div class="soc-media-icons align-items-center d-flex flex-grow-1 justify-content-end">
+            <a href><i class="fab fa-facebook-f"></i></a>
+					  <a href><i class="fab fa-twitter"></i></a>
+					  <a href><i class="fab fa-google-plus-g"></i></a>
+            <a href><i class="fab fa-pinterest"></i></a>
+  					<a href><i class="fab fa-instagram"></i></a>
+  					<a href><i class="fab fa-stumbleupon"></i></a>
+  					<a href><i class="fa fa-wifi"></i></a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Section 2 -->
-    <div id="features" style="padding: 5em 0; background: #f5f5f5;">
+    <div id="features" class="py-3 py-md-4 py-lg-5" style="background: #f5f5f5;">
       <div class="container">
         <!-- Section container 2 -->
-        <div style="display: flex;">
-          <div style="margin-right: 5em; width: 7em;">
-            <ul class="nav tabset1" role="tablist">
+        <div class="flex-column flex-md-row" style="display: flex;">
+          <div class="mr-md-5">
+            <ul class="nav flex-row flex-md-column tabset1" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" id="tab1-tab" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-selected="true">TAB 1</a>
               </li>
@@ -188,8 +188,8 @@
           <div style="padding: 1em;">
             <div class="tab-content">
               <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-                <div style="display: flex;">
-                  <div style="margin-right: 7em;">
+                <div class="flex-column flex-lg-row" style="display: flex;">
+                  <div class="mr-0 mr-lg-5">
                     <h2 style="margin-bottom: 2em;">
                       Tabs with soft transitioning effect.
                     </h2>
@@ -236,14 +236,16 @@
     </div>
 
     <!-- Section 3 -->
-    <div style="padding: 5em 0;">
+    <div>
       <div class="container">
         <!-- Section container 3 -->
-        <div style="display: flex;">
-          <div>
-            <img src="./images/section-3.png" style="width: 28em; margin-right: 5em;" />
+        <div class="row">
+          <div class="col-12 col-lg-6 py-4 py-lg-5 d-flex justify-content-start">
+            <div class="shadow-image">
+              <img src="./images/section-3.png" style="max-width: 100%; width: 28em;" />
+            </div>
           </div>
-          <div style="padding: 0 3em;">
+          <div class="col-12 col-lg-6 py-4 py-lg-5 d-flex justify-content-start justify-content-md-end">
             <div>
               <h2>Sub list section</h2>
               <div style="
@@ -305,11 +307,11 @@
     </div>
 
     <!-- Section 4 -->
-    <div style="background: #f5f5f5; padding: 3em 0;">
+    <div class="section-4" style="background: #f5f5f5;">
       <div class="container">
         <!-- Section container 4 -->
-        <div style="display: flex;">
-          <div style="margin-right: 7em; padding: 3em;">
+        <div class="row">
+          <div class="col-12 col-md-6 py-4 py-lg-5 d-flex flex-column justify-content-start">
             <h2>Standart Picture Section</h2>
             <div style="
               border-bottom: 0.12em solid #ff8b38;
@@ -330,8 +332,10 @@
               </p>
             </div>
           </div>
-          <div>
-            <img src="./images/section-4.png" style="width: 28em;" />
+          <div class="col-12 col-md-6 py-4 py-lg-5 d-flex justify-content-start justify-content-md-end">
+            <div class="shadow-image">
+              <img src="./images/section-4.png" style="max-width: 100%; width: 28em;" />
+            </div>
           </div>
         </div>
       </div>
@@ -354,8 +358,8 @@
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div style="display: flex;">
-            <div style="padding: 2em; display: flex; flex-direction: column;">
+          <div class="d-flex flex-column flex-md-row">
+            <div class="d-flex flex-column p-md-4">
               <div style="margin: auto;">
                 <div style="display: flex; margin-bottom: 1em;">
                   <div class="btn-round" style="
@@ -380,7 +384,7 @@
                 dolor sit amet lacus accumsan et viverra.
               </p>
             </div>
-            <div style="padding: 2em; display: flex; flex-direction: column;">
+            <div class="d-flex flex-column p-md-4">
               <div style="margin: auto;">
                 <div style="display: flex; margin-bottom: 1em;">
                   <div class="btn-round" style="
@@ -405,7 +409,7 @@
                 dolor sit amet lacus accumsan et viverra.
               </p>
             </div>
-            <div style="padding: 2em; display: flex; flex-direction: column;">
+            <div class="d-flex flex-column p-md-4">
               <div style="margin: auto;">
                 <div style="display: flex; margin-bottom: 1em;">
                   <div class="btn-round" style="
@@ -452,7 +456,7 @@
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div class="pricing-slot">
+          <div class="pricing-slot flex-column flex-md-row">
             <!-- Pricing slot 1 -->
             <div class="pricing-slot-box">
               <div class="pricing-slot-title">Basic</div>
@@ -545,7 +549,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div style="display: flex; margin: auto;">
+          <div class="d-flex m-auto flex-column flex-lg-row">
             <!-- Dialog 1 -->
             <div class="dialog-container">
               <div class="dialog-box">
@@ -670,9 +674,9 @@
             </p>
           </div>
 
-          <div style="width: 60em;margin: auto;">
+          <div style="width: 100%; max-width: 60em; margin: auto;">
             <form>
-              <div style="display: flex;">
+              <div class="d-flex flex-column flex-md-row">
                 <div style="padding: 1em; background: #fff; flex-grow: 1;">
                   <div style="margin-bottom: 1em;">
                     <input type="text" name="name" placeholder="Name" style="

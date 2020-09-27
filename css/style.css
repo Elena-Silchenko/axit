@@ -49,22 +49,42 @@ button:focus {
 
 .tabset1.nav .nav-item .nav-link {
   background: #333333;
-  width: 7em;
-  height: 7em;
-  padding: 2em;
+  width: 5em;
+  height: 2em;
+  padding: 0 1em;
   color: #fff;
   font-weight: 600;
-  margin-bottom: .2em;
+  margin-bottom: 0;
+  margin-right: .2em;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .tabset1.nav .nav-item:first-child .nav-link {
-  border-radius: .5em .5em 0 0;
+  border-radius: .5em 0 0 .5em;
 }
 
 .tabset1.nav .nav-item:last-child .nav-link {
-  border-radius: 0 0 .5em .5em;
+  border-radius: 0 .5em .5em 0;
+}
+
+@media (min-width: 768px) {
+  .tabset1.nav .nav-item .nav-link {
+    width: 7em;
+    height: 7em;
+    padding: 2em;
+    margin-bottom: .2em;
+    margin-right: 0;
+  }
+
+  .tabset1.nav .nav-item:first-child .nav-link {
+    border-radius: .5em .5em 0 0;
+  }
+
+  .tabset1.nav .nav-item:last-child .nav-link {
+    border-radius: 0 0 .5em .5em;
+  }
 }
 
 .tabset1.nav .nav-item .nav-link.active{
@@ -89,6 +109,18 @@ button:focus {
   bottom: 0;
   background: rgba(0, 0, 0, .5);
   z-index: 0;
+}
+
+.soc-media-icons {
+  font-size: 1.5em;
+}
+
+.soc-media-icons > a:not(:last-child) {
+  margin-right: 1em;
+}
+
+.section-4 p {
+  text-align: justify;
 }
 
 .btn-round {
@@ -121,7 +153,28 @@ button:focus {
 }
 
 .pricing-slot-box:not(:last-child) {
-  margin-right: 2em; 
+  /* margin-right: 2em;  */
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .pricing-slot-box {
+    width: 14em;
+  }
+  .pricing-slot-box:not(:last-child) {
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing-slot-box {
+    width: 15em;
+  }
+
+  .pricing-slot-box:not(:last-child) {
+    margin-right: 2em;
+  }
 }
 
 .pricing-slot-title {
@@ -159,7 +212,13 @@ button:focus {
 }
 
 .dialog-container:not(:last-child) {
-  margin-right: 7em;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 992px) {
+  .dialog-container:not(:last-child) {
+    margin-right: 3em;
+  }
 }
 
 .dialog-box {
@@ -167,7 +226,13 @@ button:focus {
   width: 17em;
   padding: 1em 2em 0.5em 1em;
   border-radius: 0.3em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .dialog-box {
+    margin-bottom: 2em;
+  }
 }
 
 .dialog-box > p {
@@ -252,4 +317,47 @@ footer a:hover {
 
 .btn-go-up > i {
   margin: auto;
+}
+
+.registration-form {
+  min-width: 18em; 
+  width: 100%; 
+  display: flex; 
+  padding: 4em 1em;
+}
+
+.registration-form form {
+  width: 100%; 
+  min-width: 18em; 
+  margin: auto; 
+  overflow: hidden; 
+  border-radius: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .registration-form {
+    max-width: 50em;
+  }
+  .registration-form form {
+    max-width: 18em;
+  }
+}
+
+.shadow-image {
+  position: relative;
+}
+
+.shadow-image > img {
+  position: relative;
+  z-index: 1;
+}
+
+.shadow-image:after {
+  content: "";
+  position: absolute;
+  left: 2em;
+  top: 2em;
+  right: 2em;
+  bottom: 2em;
+  box-shadow: 0em 2em 4em 1.4em #5a5a5aa6;
 }

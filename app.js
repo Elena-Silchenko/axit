@@ -4,7 +4,7 @@ btnGoUp.addEventListener("click", function () {
   window.scroll(0, 0)
 })
 
-window.addEventListener("scroll", function () { 
+function setBtnGoUpVisibility() {
   btnGoUp.style.display = window.scrollY > 100 ? "flex" : "none"
   /*
   if (window.scrollY > 100) {
@@ -13,6 +13,6 @@ window.addEventListener("scroll", function () {
     btnGoUp.style.display = "none"
    }
    */
-})
-
-btnGoUp.style.display = "none"
+}
+window.addEventListener("scroll", setBtnGoUpVisibility)
+setBtnGoUpVisibility()
